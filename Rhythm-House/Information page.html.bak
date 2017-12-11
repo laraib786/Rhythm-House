@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Information</title>
+<link rel="icon" href="iMusic.png" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--script type="text/javascript" src="../image-gallery.slider/js/jquery-1.9.1.min.js"></script-->
+<script type="text/javascript" src="../image-gallery.slider/js/jssor.slider.mini.js"></script>
+<script src="../Jquey11.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+<style>
+#navbar{
+	
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 .rollIn{
+	
+	 animation-duration:1s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 color:#F93;
+	 
+	 }
+	 
+   #img{
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 #img1{
+	 animation-duration:3s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 #divani{
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;}
+	#carsol1{ animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;}
+	 body{
+	 background: url(scarlet_texture-wallpaper-1440x900.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	 
+		 }
+	 
+</style>
+<style>
+.modal-content{
+	background-color:#CCC;
+	width:300px;
+	height:200px;
+    
+	}
+.loader {
+	animation-duration: 2s;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../page-loader.gif) 50% 50% no-repeat rgb(249,249,249);
+}</style>
+
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
+
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->	<script src="https://www.youtube.com/iframe_api"></script>
+
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->	<script src="https://www.youtube.com/iframe_api"></script>
+
+	<!-- End WOWSlider.com HEAD section --></head>
+<body>
+<div class="loader"></div>
+
+<br>
+<div  class="container-fluid bg-3 text-center">    
+<div class="row"> <center><img id="img" class="bounceInDown" src="PSD filee.png" class="slideInDown" style="width:40%; margin:0; display:inline"></center></div>
+<div class="container">
+	<div class="row">
+       
+        </div>
+        <br>
+        <div id="navbar" class="fadeIn">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="sources364/index2.html"><img id="img1" class="zoomOut"  src="Mundi.png" style="width:50px; height:40px; margin-bottom:100px; margin-top:-10px; margin-left:20px; margin-right:5px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="sources364/index2.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catogeries <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="Catogeries/Latest.html">Latest</a></li>
+            <li><a href="Catogeries/Old 90's.html">Old 90's</a></li>
+            <li><a href="Catogeries/Qawali,s.html">Qawali's</a></li>
+            <li><a href="Catogeries/Regional.html">Regional</a></li>
+            <li><a href="Catogeries/Kid,s Poem.html">Kid's poem</a></li>
+            <li><a href="Catogeries/Albums.html">Albums</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Magezines</a></li>
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Live shows <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="Buy Tickets.html">Buy ticket</a></li>
+            <li><a href="Information page.html">Information</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="Contact Us.html">Contact us</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal"></span> Login</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+ </div></div></body>
+ </html>

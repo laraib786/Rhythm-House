@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SignUp</title>
+<link rel="icon" href="iMusic.png" type="image/x-icon">
+</head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../js/bootstrap.min.js">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/fonts/fontawesome-webfont.svg">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="SignUp.css">
+  
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script>
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
+
+  <script>
+function myFunction() {
+    alert("Thankyou for purchasing! Now go back & enjoy (:");
+}
+</script>
+
+
+<style>
+#navbar{
+	
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 .rollIn{
+	
+	 animation-duration:1s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 color:#F93;
+	 
+	 }
+	 
+   #img{
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 #img1{
+	 animation-duration:3s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 #img2{
+	 animation-duration:3s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 .container{
+		 color:#FFF;
+		 }
+		 .container1{
+		 color:#000;
+		 }
+		 
+.loader {
+	animation-duration: 2s;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(page-loader.gif) 50% 50% no-repeat rgb(249,249,249);
+}
+		 
+
+</style>
+	<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
+
+<body>
+<div class="loader"></div>
+<div  class="container-fluid bg-3 text-center">    
+<div class="row"> <center><img id="img" class="bounceInDown" src="PSD filee.png" class="slideInDown" style="width:40%; margin:0; display:inline"></center></div>
+<div class="container">
+	<div class="row">
+       
+        </div>
+        <br>
+        <div id="navbar" class="fadeIn">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="sources364/index2.html"><img id="img1" class="swing" class="rollOut" src="Mundi.png" style="width:50px; height:40px; margin-bottom:100px; margin-top:-10px; margin-left:20px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="sources364/index2.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="Catogeries/Latest.html">Latest</a></li>
+            <li><a href="Catogeries/Old 90's.html">Old 90's</a></li>
+            <li><a href="Catogeries/Qawali,s.html">Qawali's</a></li>
+            <li><a href="Catogeries/Regional.html">Regional</a></li>
+            <li><a href="Catogeries/Kid,s Poem.html">Kid's poem</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="Magazine.html">Magezines</a></li>
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Live shows <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="Buy Tickets.html">Buy ticket</a></li>
+            <li><a href="Information page.html">Information</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="Contact Us.html">Contact us</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="SignUp.html"><span class="fa fa-user"></span> Sign Up</a></li>
+        <li><a href="sources364/index2.html"><span class="fa fa-sign-out"></span> Login</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+    <div class="container" style="width:400px;">
+           <center> <form class="form-horizontal" role="form">
+                <h3>SignUp For Rhythm House <img id="img2" class="bounce" class="rollOut" src="Mundi.png" style="width:50px; margin-bottom:10px; height:40px;"></h3>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Full Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
+                        <span style="color:#FFF;" class="help-block">Last Name, First Name, eg.: Smith, Harry</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="country" class="col-sm-3 control-label">Country</label>
+                    <div class="col-sm-9">
+                        <select id="country" class="form-control">
+                            <option>Pakistan</option>
+                            <option>India</option>
+                            <option>UAE</option>
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>Japan</option>
+                            <option>United Kingdom</option>
+                           <option>Afghanistan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="femaleRadio" value="Female">Female  </label>
+                            </div>
+                            
+                         
+                            <div class="col-sm-4">
+                                  <label class="radio-inline" style="margin-left:8px;">
+                                    <input type="radio" id="maleRadio" value="Male">Male
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="uncknownRadio" value="Unknown">Unknown
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">I accept <a href="#">terms</a>
+                            </label>
+                        </div>
+                    </div>
+                </div> 
+                <div class="form-group" style="margin-left:-135px;">
+                    <div class="col-sm-9 col-sm-offset-3">
+                    
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="background-color:#D04204; border:#000; width:400px;">Register</button>
+                    </div>
+                </div>
+            </form> </center>
+        </div> 
+
+
+
+<center>
+<div class="modal fade" id="myModal" role="dialog">
+<div class="container1">
+
+    <div class="modal-dialog">
+	 
+    <div class="modal-content">
+        <div class="modal-content">
+            <div class="form-login">
+             <div class="modal-body">
+            <center><h1><img src="iMusic.png" style="height:90px; width:100px;"></h1></center>
+                            <center><h2 style="font-size:24px; font-family:'Arial Black', Gadget, sans-serif;">Rhythm Membership</h2></center>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>Rs.200/Month</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited Musics and Records</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a  class="btn btn-lg btn-block btn-warning" href="sources364/index2.html" onclick="myFunction()">BUY NOW!</a>
+                        </div></center>
+                    </div>
+                </div></div>
+            </div>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</center>
+<audio id="my_audio" src="Grew Up.mp3" loop></audio>
+</body>
+</html>

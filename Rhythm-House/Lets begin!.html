@@ -1,0 +1,120 @@
+<!doctype html>
+<html><head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rhythm House...!</title>
+<link rel="icon" href="iMusic.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="Hover-master/Hover-master/css/hover.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<script>
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
+
+
+<style type="text/css">
+
+
+
+img{
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;}	 
+	 
+h4{
+	 animation-duration:5s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;}
+	 p{
+	 animation-duration:5s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;}	 
+
+ 		*{
+			margin:0;
+			padding:0;
+			}
+			
+		body{
+			font-family:"Courier New", Courier, monospace;
+			}	
+		
+		.background-wrap{
+			
+			position:fixed;
+			z-index:1000;
+			width:100%;
+			height:100%;
+			overflow:hidden;
+			top:0;
+			left:0;
+			}	
+		
+		#video-bg-elem{
+			position:absolute;
+			top:0;
+			left:0;
+			min-height:100%;
+			min-width:100%;
+			
+			}
+			
+			.content{
+				
+				position:absolute;
+				width:100%;
+				min-height:100%;
+				z-index:1000;
+			}
+			.content img{
+				
+				width:400px;
+				height:auto;
+				text-transform:uppercase;
+				font-weight:300;
+				}	
+				
+				
+				#imgrot {
+  
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+#imgrot:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}	
+</style>
+</head>
+
+<body>
+
+		<div class="background-wrap">
+        
+        <video id="video-bg-elem" preload="auto" autoplay loop muted="muted">
+        <source src="Low.mp4">
+        	video not supported
+            </video>
+        
+        </div>
+        
+     
+      <center> <div class="content">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        
+        <img src="PNG File.png" height="125" class="bounceInDown" style="width:500px;">
+        <h4 class="flash"><font face="Tahoma, Geneva, sans-serif" color="#000000">If it's Sounds Good, It's a Miracle..!!</h4></font>
+        <br><br><br><br><br><br><br><br>
+   
+        <a href="sources364/index2.html"><img id="imgrot" src="xlarge_7.png" style="width:350px; height:200px; margin-top:-100px;"></a>
+   
+      </div></center></div>
+      <audio id="my_audio" src="runin adam.mp3" loop></audio>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<link rel="icon" href="iMusic.png" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="Hover-master/Hover-master/css/hover.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="Footer.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css"></head>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
+<script>
+function myFunction() {
+    alert("Thankyou (: ");
+	
+}
+</script>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var map;
+var myCenter=new google.maps.LatLng(24.867135,67.024261);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:17,
+  mapTypeId:google.maps.MapTypeId.SATELLITE.HIBRID
+  };
+
+  map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  google.maps.event.addListener(map, 
+   function(event) {
+    placeMarker(event.latLng);
+  });
+}
+
+function placeMarker(location) {
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map,
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
+  });
+  infowindow.open(map,marker);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<style>
+body{
+	 background:url(black_metal_texture-wallpaper-1440x900.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	 
+		 }
+		#img{
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 
+	 }
+	 #hover:hover{
+		 color:#0C0;
+	
+		 }
+		 
+.loader {
+	animation-duration: 2s;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(page-loader.gif) 50% 50% no-repeat rgb(249,249,249);}
+	
+		
+	#img1{
+	 animation-duration:3s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	
+		.modal-content{
+	background-color:#CCC;
+	width:300px;
+	height:200px;
+    
+	}
+		
+</style>
+
+
+<body>
+<div class="loader"></div>
+<br>
+
+<div  class="container-fluid bg-3 text-center">    
+<div class="row"> <center><img id="img" class="bounceInDown" src="PSD filee.png" class="" style="width:40%; margin:0; display:inline"></center></div>
+<div class="container">
+	<div class="row">
+       
+</div>
+        <br>
+        <div id="navbar" class="fadeIn">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="sources364/index2.html"><img id="img1" class="flash" src="Mundi.png" style="width:50px; height:40px; margin-bottom:100px; margin-top:-10px; margin-left:20px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="sources364/index2.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="Catogeries/Latest.html">Latest</a></li>
+            <li><a href="Catogeries/Old 90's.html">Old 90's</a></li>
+            <li><a href="Catogeries/Qawali,s.html">Qawali's</a></li>
+            <li><a href="Catogeries/Regional.html">Regional</a></li>
+            <li><a href="Catogeries/Kid,s Poem.html">Kid's poem</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="Magazine.html">Magezines</a></li>
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Live shows <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="Buy Tickets.html">Buy ticket</a></li>
+            <li><a href="Information page.html">Information</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="Contact Us.html">Contact us</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="SignUp.html"><span class="fa fa-user"></span> Sign Up</a></li>
+         <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-sign-out" data-toggle="modal" data-target="#myModal"></span> Login</a> </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+<div id="googleMap" style="width:600px; height:400px; float:right; margin-top:100px; border-radius:30px;"></div>
+<br><br><br><br><br><br>
+<div style="margin-top:-180px;">
+<img src="contact-us-button.png" style=" margin-left:-80px; margin-top:50px; height:200px; margin-right:0px;"></img>
+<div class="form-group">
+  <input type="text" class="form-control" id="usr" placeholder="Your Name" style="width:350px;">
+</div>
+
+<div class="form-group">
+  <input type="email" class="form-control" id="pwd" placeholder="Email" style="width:350px;">
+</div>
+<div class="form-group">
+  
+  <textarea class="form-control" rows="5" id="comment" placeholder="Message" style="width:350px; height:200px;"></textarea>
+</div>
+<a href="sources364/index2.html"><button id="hover" type="button" onclick="myFunction()"  class="btn btn-success" style="float:left; margin-top:-8px; background-color:#000;border-color:#F00; margin-left:143px;">Submit</button></a>
+
+</div>
+
+<center>
+    <div class="modal fade" id="myModal" role="dialog">
+<div class="container">
+
+    <div class="modal-dialog">
+	 
+    <div class="modal-content">
+        <div class="modal-content">
+            <div class="form-login">
+             <div class="modal-body">
+            <img id="img1"  src="Mundi.png" style="width:40px; height:30px; margin-bottom:10px;">
+            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="Username" />
+            </br>
+            <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="Password" />
+            </br>
+            <div class="wrapper">
+            <span class="group-btn">     
+                <a href="Contact Us.html" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
+            </span>
+            </div>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<footer  class="footer-basic-centered">
+
+			<p class="footer-company-motto">If it's Sounds Good, It's a Miracle..!!</p>
+
+			<p id="links" class="footer-links">
+				<a href="sources364/index2.html">Home</a>
+				|
+				<a href="Catogeries/Latest.html">Catogeries</a>
+				|
+				<a href="Magazine.html">Magezines</a>
+				|
+				<a href="Buy Tickets.html">Live Shows</a>
+				|
+				<a href="Contact Us.html">Contact</a>
+				|
+				<a href="SignUp.html">SignUp</a>
+			</p>
+<div class="form-group" >
+  <input id="new1" type="text" class="form-control" style="width:300px;
+margin-left:375px;" placeholder="Search Anything!">
+</div><i class="hvr-buzz"><button type="button" class="btn btn-success" style="margin-bottom:20px; border-color:#FFF; background-color:transparent">Search</button></i>	<br><p class="footer-company-name">Rhythm House &copy; 2016</p>
+
+		</footer>
+</div>
+
+</center>
+
+</body>
+</html>

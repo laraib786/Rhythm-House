@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<link rel="icon" href="../iMusic.png" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../bootstrap.min.css">
+<link rel="stylesheet" href="../Hover-master/Hover-master/css/hover.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="../jquery.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script type="text/javascript" src="../image-gallery.slider/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../image-gallery.slider/js/jssor.slider.mini.js"></script>
+<script src="../Jquey11.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../animate.css">
+<link rel="stylesheet" type="text/css" href="../Footer.css">
+
+<link rel="stylesheet" type="text/css" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+
+<script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 10,
+                $SpacingX: 8,
+                $SpacingY: 8,
+                $Align: 360
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 800);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+		
+</script>
+<script>
+function myFunction() {
+    alert("Not Working, Page is under maintanence!");
+}
+</script>
+
+<style>
+        
+        /* jssor slider arrow navigator skin 05 css */
+        /*
+        .jssora05l                  (normal)
+        .jssora05r                  (normal)
+        .jssora05l:hover            (normal mouseover)
+        .jssora05r:hover            (normal mouseover)
+        .jssora05l.jssora05ldn      (mousedown)
+        .jssora05r.jssora05rdn      (mousedown)
+        */
+        .jssora05l, .jssora05r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: url('img/a17.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora05l { background-position: -10px -40px; }
+        .jssora05r { background-position: -70px -40px; }
+        .jssora05l:hover { background-position: -130px -40px; }
+        .jssora05r:hover { background-position: -190px -40px; }
+        .jssora05l.jssora05ldn { background-position: -250px -40px; }
+        .jssora05r.jssora05rdn { background-position: -310px -40px; }
+
+        /* jssor slider thumbnail navigator skin 01 css */
+        /*
+        .jssort01 .p            (normal)
+        .jssort01 .p:hover      (normal mouseover)
+        .jssort01 .p.pav        (active)
+        .jssort01 .p.pdn        (mousedown)
+        */
+        .jssort01 .p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 72px;
+            height: 72px;
+        }
+        
+        .jssort01 .t {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .jssort01 .w {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .jssort01 .c {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 68px;
+            height: 68px;
+            border: #000 2px solid;
+            box-sizing: content-box;
+            background: url('img/t01.png') -800px -800px no-repeat;
+            _background: none;
+        }
+        
+        .jssort01 .pav .c {
+            top: 2px;
+            _top: 0px;
+            left: 2px;
+            _left: 0px;
+            width: 68px;
+            height: 68px;
+            border: #000 0px solid;
+            _border: #fff 2px solid;
+            background-position: 50% 50%;
+        }
+        
+        .jssort01 .p:hover .c {
+            top: 0px;
+            left: 0px;
+            width: 70px;
+            height: 70px;
+            border: #fff 1px solid;
+            background-position: 50% 50%;
+        }
+        
+        .jssort01 .p.pdn .c {
+            background-position: 50% 50%;
+            width: 68px;
+            height: 68px;
+            border: #000 2px solid;
+        }
+        
+        * html .jssort01 .c, * html .jssort01 .pdn .c, * html .jssort01 .pav .c {
+            /* ie quirks mode adjust */
+            width /**/: 72px;
+            height /**/: 72px;
+        }
+        
+</style>
+<style>
+#navbar{
+	
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 .rollIn{
+	
+	 animation-duration:1s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 color:#F93;
+	 
+	 }
+	 
+   #img{
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 #img1{
+	 animation-duration:3s;
+	 animation-iteration-count:infinite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;
+	 
+	 }
+	 #divani{
+	 animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;}
+	#carsol1{ animation-duration:1s;
+	 animation-iteration-count:finite;
+	 animation-play-state:running;
+	 animation-timing-function:linear;}
+	 body{
+	 background: url(../tiesto_concert__musical_freedom-wallpaper-1440x900.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	 
+		 }
+	 
+</style>
+<style>
+.modal-content{
+	background-color:#CCC;
+	width:300px;
+	height:200px;
+    
+	}
+.loader {
+	animation-duration: 2s;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../page-loader.gif) 50% 50% no-repeat rgb(249,249,249);
+}
+.form-group{
+	float:right;
+	margin-right:330px;
+	width:500px;
+	}
+	#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+#playlist{
+	list-style:none;
+	}
+#playlist li a {
+	color:#F93;
+	text-decoration:none;
+	}
+#playlist .current-song a{
+	color:#FFF;
+	}		
+</style>
+
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
+</head>
+<body>
+<div class="loader"></div>
+
+<br>
+<div  class="container-fluid bg-3 text-center">    
+<div class="row"> <center><img id="img" class="bounceInDown" src="../PSD filee.png" class="slideInDown" style="width:40%; margin:0; display:inline"></center></div>
+<div class="container">
+	<div class="row">
+       
+        </div>
+        <br>
+        <div id="navbar" class="fadeIn">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="../Lets begin!.html"><img id="img1" class="swing" class="rollOut" src="../Mundi.png" style="width:50px; height:40px; margin-bottom:100px; margin-top:-10px; margin-left:20px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index2.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="../Catogeries/Latest.html">Latest</a></li>
+            <li><a href="../Catogeries/Old 90's.html">Old 90's</a></li>
+            <li><a href="../Catogeries/Qawali,s.html">Qawali's</a></li>
+            <li><a href="../Catogeries/Regional.html">Regional</a></li>
+            <li><a href="../Catogeries/Kid,s Poem.html">Kid's poem</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="../Magazine.html">Magezines</a></li>
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Live shows <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="../Buy Tickets.html">Buy ticket</a></li>
+            <li><a href="../Information page.html">Information</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="../Contact Us.html">Contact us</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../SignUp.html"><span class="fa fa-user"></span> Sign Up</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-sign-out" data-toggle="modal" data-target="#myModal"></span> Login</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+	
+ <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div class="row">
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../music_6-wallpaper-1366x768.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-02.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../concert_crowd-wallpaper-1440x900.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-11.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../Best-Picture-Pioneer-DJ-Wallpaper-HD-Desktop-Mobile-29893882.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-10.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../Music-Is-My-Life-Lyrics-Are-My-Story-Facebook-Cover-Photo.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-05.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../keep_calm_listen_music.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-12.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../MTV Desi.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-01.jpg" />
+            </div>
+           <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../Music-HD-Wallpaper-for-Desktop.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-04.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../music_is_everything-wallpaper-1366x768.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-03.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../Logo_black_highRes.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-13.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../7017131-fire-water-guitar.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-09.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../talavya live.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-07.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="../6808293-rock-wallpaper.jpg" />
+                <img data-u="thumb" src="../Thmb/thumb-08.jpg" />
+            </div>
+        </div>
+        
+        
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+        <a href="http://www.jssor.com" style="display:none"></a>
+    </div>
+    </div>
+    <div class="row" >
+    <br>
+    <h3 style="font-family:'Comic Sans MS', cursive; display:inline; color:#FC3;" class="rollIn"><a href="../Kantik - Feel It (Original).mp3">New -Kantik-FEEL IT (available now)</a>  <p class="fa fa-bolt"></p></h3>
+<center><h4 style="color:#FFF;">Bhit Ja Bhitai By Telenor <i class="fa fa-play"></i></h4><audio controls id="audioPlayer" >
+	sorry, your browser doesn't support html5
+ <source src="../bhit_ja_bhitai_telenor_full_song.mp3">
+</audio>
+</div>
+<center>
+
+
+</center>
+   <center>
+    <div class="modal fade" id="myModal" role="dialog">
+<div class="container">
+
+    <div class="modal-dialog">
+	 
+    <div class="modal-content">
+        <div class="modal-content">
+            <div class="form-login">
+             <div class="modal-body">
+            <img id="img1"  src="../Mundi.png" style="width:40px; height:30px; margin-bottom:10px;">
+            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="Username" />
+            </br>
+            <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="Password" />
+            </br>
+            <div class="wrapper">
+            <span class="group-btn">     
+                <a href="index2.html" class="btn btn-primary btn-md" onclick="myFunction()">Login <i class="fa fa-sign-in"></i></a>
+            </span>
+            </div>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+<footer  class="footer-basic-centered">
+<div class="row">
+			<p class="footer-company-motto">If it's Sounds Good, It's a Miracle..!!</p>
+</div>
+<div class="row">
+			<p id="links" class="footer-links">
+				<a href="index2.html">Home</a>
+				|
+				<a href="../Catogeries/Latest.html">Catogeries</a>
+				|
+				<a href="../Magazine.html">Magezines</a>
+				|
+				<a href="../Buy Tickets.html">Live Shows</a>
+				|
+				<a href="../Contact Us.html">Contact</a>
+				|
+				<a href="../SignUp.html">SignUp</a>
+			</p>
+</div>
+<div class="row">
+<div class="col-sm-4 col-sm-offset-4">
+  <input type="text" class="form-control"  placeholder="Search Anything!">
+</div>
+</div>
+<br>
+<div class="row">
+<i class="hvr-buzz"><button type="button" class="btn btn-success" style="margin-bottom:20px; border-color:#FFF; background-color:transparent">Search</button></i>	<br><p class="footer-company-name">Rhythm House &copy; 2016</p>
+</div>
+		</footer>
+</div>
+
+</center>
+    </body>
+</html>
